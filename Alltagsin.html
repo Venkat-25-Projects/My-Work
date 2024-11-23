@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive HTML Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        header, footer { background-color: #f8f8f8; padding: 10px; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline; margin-right: 10px; }
+        section { margin-top: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 10px; text-align: left; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+        <img src="logo.png" alt="Website Logo" width="100">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section of the website. Here, you can find an introduction to our content.</p>
+            <p>Here is an image:</p>
+            <img src="image.jpg" alt="Sample Image" width="200">
+            <p>Here is a video:</p>
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Here is an audio file:</p>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This is the about section. Learn more about our mission and values.</p>
+            <blockquote>
+                "This is a blockquote. It's a great way to highlight a particular quote or excerpt."
+            </blockquote>
+            <p>Here is a list of our values:</p>
+            <ul>
+                <li>Integrity</li>
+                <li>Innovation</li>
+                <li>Customer Focus</li>
+            </ul>
+        </section>
+        
+        <section id="services">
+            <h2>Services Section</h2>
+            <p>This is the services section. Below is a table listing our services and prices:</p>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>Creating stunning and responsive websites.</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>Improving your website's visibility on search engines.</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>Graphic Design</td>
+                    <td>Creating visual content to communicate messages.</td>
+                    <td>$400</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This is the contact section. Get in touch with us using the form below:</p>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <address>
+            Contact us at: <a href="mailto:info@mywebsite.com">info@mywebsite.com</a><br>
+            Call us at: <a href="tel:+1234567890">+1234567890</a>
+        </address>
+    </footer>
+</body>
+</html>
