@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .img-container{
+            float: left;
+            width: 33%;
+            height: 50px;
+            padding:5px;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="clearfix">
+        <img src="college.jpeg" style="width: 200px;height: 100px;">
+    </div>
+    <div class="img-container">
+        <img src="college.jpeg" style="width: 200px;height: 100px;">
+    </div>
+    <div class="img-container">
+        <img src="college.jpeg" style="width: 200px;height: 100px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .header, .footer{
+        background-color: burlywood;
+        color: aquamarine;
+        padding: 10px;
+    }
+    .column{
+        float: left;
+        padding: 15px;
+    }
+    .menu{
+        width: 10%;
+    }
+    .content{
+        width: 90%;
+    }
+    .menu ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+    }
+    .menu li{
+        padding: 10px;
+        margin-top: 10px;
+        background-color: blueviolet;
+        color: azure;
+    }
+    .menu li:hover{
+        background-color: greenyellow;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+<body>
+    <div class="header"><h1>BST</h1></div>
+    <div class="column menu">
+        <ul>
+            <li>First</li>
+            <li>First</li>
+            <li>First</li>
+            <li>First</li>
+        </ul>
+    </div>
+    <div class="clearfix">
+        <div class="column content">
+            <h1>enterprises
+            </h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perspiciatis enim repudiandae aspernatur iusto veniam consectetur quaerat sint optio sequi est vitae quasi eaque voluptatem ipsa in, aliquid tempore? Commodi.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perspiciatis enim repudiandae aspernatur iusto veniam consectetur quaerat sint optio sequi est vitae quasi eaque voluptatem ipsa in, aliquid tempore? Commodi.</p>
+        </div>
+    </div>
+    <div class="footer"><h1>Contact</h1></div>
+</body>
+</html>
